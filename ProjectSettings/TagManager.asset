@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Mentega
+  - Martabak
+  - TB_Coklat
+  - TB_Kacang
+  - Choco
+  - Nut
+  - Red
+  - Yellow
+  - Blue
+  - Green
+  - Keju
+  - TB_Keju
+  - TB_CokKej
+  - TB_CokKac
+  - TB_KacKej
+  - TB_Spesial
+  - Kemas
+  - Adonan
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Video
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
