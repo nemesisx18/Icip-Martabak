@@ -10,9 +10,16 @@ public class SpawnAdonan : MonoBehaviour
     public Sprite coklat;
     public Sprite kacang;
     public Sprite keju;
+
+    public GameObject chaCha;
+    public GameObject matcha;
+    public GameObject strawberry;
+    public GameObject corn;
+
     public Sprite coklatKacang;
     public Sprite coklatKeju;
     public Sprite kacangKeju;
+    public Sprite spesial;
 
     void Update()
     {
@@ -22,6 +29,14 @@ public class SpawnAdonan : MonoBehaviour
             spriteRenderer.sprite = kacang;
         if (gameManager.isKeju)
             spriteRenderer.sprite = keju;
+        if (gameManager.isChaCha)
+            chaCha.SetActive(true);
+        if (gameManager.isMatcha)
+            matcha.SetActive(true);
+        if (gameManager.isStrawberry)
+            strawberry.SetActive(true);
+        if (gameManager.isCorn)
+            corn.SetActive(true);
 
         if (gameManager.isChoco && gameManager.isNut)
             spriteRenderer.sprite = coklatKacang;
@@ -29,6 +44,8 @@ public class SpawnAdonan : MonoBehaviour
             spriteRenderer.sprite = coklatKeju;
         if (gameManager.isNut && gameManager.isKeju)
             spriteRenderer.sprite = kacangKeju;
+        if (gameManager.isChaCha && gameManager.isMatcha && gameManager.isStrawberry && gameManager.isCorn)
+            spriteRenderer.sprite = spesial;
     }
 
     void OnTriggerExit2D(Collider2D collision)

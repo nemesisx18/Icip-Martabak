@@ -3164,9 +3164,14 @@ MonoBehaviour:
   coklat: {fileID: 21300000, guid: 5b9f7d831dd62f545a4650b460e2225a, type: 3}
   kacang: {fileID: 21300000, guid: fe3e320335f2165439c731e2f28801da, type: 3}
   keju: {fileID: 21300000, guid: 8e3a8d276e187ef47b97aa43ee9c1b5a, type: 3}
+  chaCha: {fileID: 21300000, guid: 319e3e331dbc2834ba748c438f88d769, type: 3}
+  matcha: {fileID: 21300000, guid: 2f347bc754048254d84d5add4c6a7058, type: 3}
+  strawberry: {fileID: 21300000, guid: e84ac27ad3ae35447be03cb45c9657a6, type: 3}
+  corn: {fileID: 21300000, guid: cd29560c742055c438db9db80c0420fd, type: 3}
   coklatKacang: {fileID: 21300000, guid: c912df4a3e7905243bd9e9de0f86c605, type: 3}
   coklatKeju: {fileID: 21300000, guid: c71734478c4063447804ae651824f9d2, type: 3}
   kacangKeju: {fileID: 21300000, guid: 43d1685fede07bb4fa27b44d0558a31b, type: 3}
+  spesial: {fileID: 21300000, guid: fb417417792a3164982477f02f2b8d20, type: 3}
 --- !u!212 &452531466
 SpriteRenderer:
   m_ObjectHideFlags: 0
