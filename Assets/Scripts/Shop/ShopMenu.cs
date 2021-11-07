@@ -89,6 +89,34 @@ public class ShopMenu : MonoBehaviour
         audioSFX.Play();
     }
 
+    public void ChaChaItem()
+    {
+        moneyAmount -= 10000;
+        gameManager.chaChaQty += 1;
+        audioSFX.Play();
+    }
+
+    public void MatchaItem()
+    {
+        moneyAmount -= 10000;
+        gameManager.matchaQty += 1;
+        audioSFX.Play();
+    }
+
+    public void StrawberryItem()
+    {
+        moneyAmount -= 10000;
+        gameManager.strawberryQty += 1;
+        audioSFX.Play();
+    }
+
+    public void CornItem()
+    {
+        moneyAmount -= 10000;
+        gameManager.cornQty += 1;
+        audioSFX.Play();
+    }
+
     public void FinishPrep()
     {
         PlayerPrefs.SetInt("MoneyAmount", moneyAmount);

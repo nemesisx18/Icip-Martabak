@@ -22,6 +22,10 @@ TagManager:
   - TB_Spesial
   - Kemas
   - Adonan
+  - ChaCha
+  - Matcha
+  - Strawberry
+  - Corn
   layers:
   - Default
   - TransparentFX

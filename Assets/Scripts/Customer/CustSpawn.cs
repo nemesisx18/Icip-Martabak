@@ -40,6 +40,9 @@ public class CustSpawn : MonoBehaviour
         customerInstance_3 = customerObject_3;
         customerInstance_4 = customerObject_4;
 
+        //CustomerController cc = customerInstance[customerInstance.Length].GetComponent<CustomerController>();
+        //cc.SetupCustomer(GetComponent<CustSpawn>());
+
         //customer 1
         Customer_1 cs1 = customerInstance.GetComponent<Customer_1>();
         cs1.Setup1(GetComponent<CustSpawn>());
@@ -79,18 +82,10 @@ public class CustSpawn : MonoBehaviour
             if (elapsedTime > secondsBetweenSpawn)
             {
                 //random fixed spawn
-                //List<System.Func<IEnumerator>> routines = new List<System.Func<IEnumerator>>();
-                //routines.Add(TimedSpawn);
-                //routines.Add(TimedSpawn2);
-
-                //StartCoroutine(routines[Random.Range(0, routines.Count)]());
-
                 StartCoroutine(TimedSpawn());
             }
         }
     }
-
-    
 
     #region spawn_customer
 
@@ -125,48 +120,6 @@ public class CustSpawn : MonoBehaviour
         //Vector2 spawnPosition = new Vector2(7.5f, 2.5f);
 
         GameObject newCustomer = (GameObject)Instantiate(prefabSpawnB[Random.Range(0, prefabSpawnB.Length)], originalPos.position, Quaternion.Euler(0, 0, 0));
-
-        custQty += 1;
-
-        isSpawned = true;
-        isFirst = false;
-    }
-
-    #endregion
-
-    #region spawn_customer2
-
-    IEnumerator TimedSpawn2()
-    {
-        SpawnCustomer3();
-
-        yield return new WaitForSeconds(0.1f);
-        SpawnCustomer4();
-    }
-
-    void SpawnCustomer3()
-    {
-        elapsedTime = 0;
-        Debug.Log(true);
-
-        //Vector2 spawnPosition = new Vector2(7.5f, -1f);
-
-        GameObject newCustomer = (GameObject)Instantiate(customerObject_3, originalPos.position, Quaternion.Euler(0, 0, 0));
-
-        custQty += 1;
-
-        isSpawned = true;
-        isFirst = false;
-    }
-
-    void SpawnCustomer4()
-    {
-        elapsedTime = 0;
-        Debug.Log(true);
-
-        //Vector2 spawnPosition = new Vector2(7.5f, 2.5f);
-
-        GameObject newCustomer = (GameObject)Instantiate(customerObject_4, originalPos.position, Quaternion.Euler(0, 0, 0));
 
         custQty += 1;
 

@@ -27,9 +27,6 @@ public class GameManager : MonoBehaviour
 
     public bool isCooked;
 
-    private GameObject TBinstance;
-    public GameObject TBObject;
-
     [Header("Mentega Item")]
     public int butterQty;
     public bool isButterSold = false;
@@ -63,10 +60,41 @@ public class GameManager : MonoBehaviour
     public GameObject tbKeju;
     public GameObject[] kejuItem;
 
+    [Header("Chacha Item")]
+    public int chaChaQty;
+    public bool isChaCha = false;
+
+    public Text chaChaText;
+    public GameObject[] chaChaItem;
+
+    [Header("Matcha Item")]
+    public int matchaQty;
+    public bool isMatcha = false;
+
+    public Text matchaText;
+    public GameObject[] matchaItem;
+
+    [Header("Strawberry Item")]
+    public int strawberryQty;
+    public bool isStrawberry = false;
+
+    public Text strawberryText;
+    public GameObject[] strawberryItem;
+
+    [Header("Corn Item")]
+    public int cornQty;
+    public bool isCorn = false;
+
+    public Text cornText;
+    public GameObject[] cornItem;
+
     [Header("Level 2")]
     public GameObject tbCokKej;
     public GameObject tbCokKac;
     public GameObject tbKacKej;
+
+    [Header("Level 3")]
+    public GameObject tbSpesial;
 
     [SerializeField] private GameObject prepCanvas;
     [SerializeField] private GameObject dropPointInstance;
@@ -83,12 +111,6 @@ public class GameManager : MonoBehaviour
 
         audioWin = gameObject.AddComponent<AudioSource>();
         audioWin.clip = clipWin;
-
-        //set TB instance
-        TBinstance = TBObject;
-
-        TBControl tb = TBinstance.GetComponent<TBControl>();
-        tb.SetupTB(GetComponent<GameManager>());
     }
 
     void Update()
@@ -100,6 +122,14 @@ public class GameManager : MonoBehaviour
         ItemChoco();
         ItemNut();
         ItemKeju();
+
+        if (level3)
+        {
+            ItemChaCha();
+            ItemMatcha();
+            ItemStrawberry();
+            ItemCorn();
+        }
 
         if (isShopOpen == true)
         {
@@ -157,7 +187,6 @@ public class GameManager : MonoBehaviour
             if (isButter && isChoco && isKeju)
             {
                 tbCokKej.SetActive(true);
-                Debug.Log("cokalt keju");
             }
             else
             {
@@ -167,7 +196,6 @@ public class GameManager : MonoBehaviour
             if (isButter && isChoco && isNut)
             {
                 tbCokKac.SetActive(true);
-                Debug.Log("cokalt kacang");
             }
             else
             {
@@ -177,7 +205,6 @@ public class GameManager : MonoBehaviour
             if (isButter && isNut && isKeju)
             {
                 tbKacKej.SetActive(true);
-                Debug.Log("kacang keju");
             }
             else
             {
@@ -191,6 +218,18 @@ public class GameManager : MonoBehaviour
             else
             {
                 tbKeju.SetActive(false);
+            }
+        }
+
+        else if(level3)
+        {
+            if (isButter && isChaCha && isMatcha && isStrawberry && isCorn)
+            {
+                tbSpesial.SetActive(true);
+            }
+            else
+            {
+                tbSpesial.SetActive(false);
             }
         }
     }
@@ -244,6 +283,58 @@ public class GameManager : MonoBehaviour
                 kejuItem[i].SetActive(true);
             else
                 kejuItem[i].SetActive(false);
+        }
+    }
+
+    void ItemChaCha()
+    {
+        chaChaText.text = chaChaQty.ToString();
+
+        for(int i = 0; i < chaChaItem.Length; i++)
+        {
+            if (chaChaQty >= 1)
+                chaChaItem[i].SetActive(true);
+            else
+                chaChaItem[i].SetActive(false);
+        }
+    }
+
+    void ItemMatcha()
+    {
+        matchaText.text = matchaQty.ToString();
+
+        for (int i = 0; i < matchaItem.Length; i++)
+        {
+            if (matchaQty >= 1)
+                matchaItem[i].SetActive(true);
+            else
+                matchaItem[i].SetActive(false);
+        }
+    }
+
+    void ItemStrawberry()
+    {
+        strawberryText.text = strawberryQty.ToString();
+
+        for (int i = 0; i < strawberryItem.Length; i++)
+        {
+            if (strawberryQty >= 1)
+                strawberryItem[i].SetActive(true);
+            else
+                strawberryItem[i].SetActive(false);
+        }
+    }
+
+    void ItemCorn()
+    {
+        cornText.text = cornQty.ToString();
+
+        for (int i = 0; i < cornItem.Length; i++)
+        {
+            if (cornQty >= 1)
+                cornItem[i].SetActive(true);
+            else
+                cornItem[i].SetActive(false);
         }
     }
 

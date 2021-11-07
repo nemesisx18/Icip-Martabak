@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class coklatControl : MonoBehaviour
 {
-
     public GameObject prefabCoklat;
 
     public Transform spawnTB;
@@ -17,6 +16,9 @@ public class coklatControl : MonoBehaviour
 
     void Update()
     {
+        if (gameObject.activeInHierarchy)
+            Debug.Log("this" + gameObject.name + "active");
+        
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))
@@ -53,8 +55,10 @@ public class coklatControl : MonoBehaviour
             gameManager.isChoco = false;
             gameManager.isNut = false;
             gameManager.isKeju = false;
-            //gameManager.isButter = false;
-            //gameManager.isButter = false;
+            gameManager.isChaCha = false;
+            gameManager.isMatcha = false;
+            gameManager.isStrawberry = false;
+            gameManager.isCorn = false;
         }
     }
 }

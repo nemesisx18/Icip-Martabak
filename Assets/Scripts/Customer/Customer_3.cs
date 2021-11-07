@@ -77,7 +77,7 @@ public class Customer_3 : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (gameManager.level1)
+        if (gameManager.level1 || gameManager.level3)
         {
             if (collision.tag == "TB_Kacang")
             {

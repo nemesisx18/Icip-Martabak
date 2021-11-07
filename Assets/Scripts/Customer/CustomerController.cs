@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Customer_1 : MonoBehaviour
+public class CustomerController : MonoBehaviour
 {
     [SerializeField] private CustSpawn custSpawn;
     [SerializeField] private ShopMenu shopMenu;
@@ -10,7 +10,7 @@ public class Customer_1 : MonoBehaviour
     public GameTimer gameTimer;
 
     public GameObject dishUI;
-    
+
     private AudioSource audioCoin;
     public AudioClip clipCoin;
 
@@ -19,13 +19,15 @@ public class Customer_1 : MonoBehaviour
     public float walkingDirection = 1.0f;
     public float respawnUI;
 
-    public string gameObjectTag;
+    public string gameObjectTag1;
+    public string gameObjectTag2;
+    public string gameObjectTag3;
 
     float originalX;
     Animator anim;
     Vector2 walkAmount;
 
-    public void Setup1(CustSpawn _custSpawn)
+    public void SetupCustomer(CustSpawn _custSpawn)
     {
         custSpawn = _custSpawn;
         shopMenu = custSpawn.GetComponent<ShopMenu>();
@@ -47,7 +49,7 @@ public class Customer_1 : MonoBehaviour
 
     void Update()
     {
-        if(gameTimer.playAds == false && gameManager.pausedMenu == false && gameManager.isShopOpen == false)
+        if (gameTimer.playAds == false && gameManager.pausedMenu == false && gameManager.isShopOpen == false)
         {
             dishUI.SetActive(true);
         }
@@ -55,7 +57,7 @@ public class Customer_1 : MonoBehaviour
         {
             dishUI.SetActive(false);
         }
-        
+
         //kustomer gerak
         walkAmount.x = walkingDirection * walkSpeed * Time.deltaTime;
         if (walkingDirection < 0.0f && transform.position.x <= originalX + maxWalk)
@@ -64,20 +66,6 @@ public class Customer_1 : MonoBehaviour
         }
 
         transform.Translate(walkAmount);
-
-        //if(gameManager.level1)
-        //{
-        //    PesananChoco();
-        //}
-
-        //if(gameManager.level2)
-        //{
-        //    PesananCokKac();
-        //}
-        //if(gameManager.level3)
-        //{
-        //    //isi pesanan
-        //}
     }
 
     public void DoneLeft()
@@ -88,30 +76,9 @@ public class Customer_1 : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (gameManager.level1 || gameManager.level3)
+        if (gameManager.level1)
         {
-            if (collision.tag == "TB_Coklat")
-            {
-                shopMenu.moneyAmount += 22000;
-                audioCoin.Play();
-
-                Destroy(collision.gameObject);
-                Destroy(this.gameObject);
-
-                custSpawn.custQty -= 1;
-                custSpawn.isSpawned = false;
-
-                gameManager.customerDone += 1;
-                gameManager.isButter = false;
-                gameManager.isChoco = false;
-
-                Debug.Log("ini rasa coklat");
-            }
-        }
-
-        if (gameManager.level2)
-        {
-            if (collision.tag == "TB_CokKac")
+            if (collision.tag == gameObjectTag1)
             {
                 shopMenu.moneyAmount += 22000;
                 audioCoin.Play();
@@ -126,8 +93,28 @@ public class Customer_1 : MonoBehaviour
                 gameManager.isButter = false;
                 gameManager.isChoco = false;
                 gameManager.isNut = false;
+                gameManager.isKeju = false;
+            }
+        }
 
-                Debug.Log("ini rasa coklat kacang");
+        if (gameManager.level2)
+        {
+            if (collision.tag == gameObjectTag2)
+            {
+                shopMenu.moneyAmount += 22000;
+                audioCoin.Play();
+
+                Destroy(collision.gameObject);
+                Destroy(this.gameObject);
+
+                custSpawn.custQty -= 1;
+                custSpawn.isSpawned = false;
+
+                gameManager.customerDone += 1;
+                gameManager.isButter = false;
+                gameManager.isChoco = false;
+                gameManager.isNut = false;
+                gameManager.isKeju = false;
             }
         }
     }
@@ -138,82 +125,4 @@ public class Customer_1 : MonoBehaviour
         dishUI.SetActive(true);
         anim.SetBool("isIdle", true);
     }
-
-    #region Menu Pesanan
-
-    //void PesananChoco()
-    //{
-    //    if (gameManager.isChoco && gameManager.isButter)
-    //    {
-    //        gameManager.tbCoklat.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        gameManager.tbCoklat.SetActive(false);
-    //    }
-    //}
-
-    //private void PesananKeju()
-    //{
-    //    if (gameManager.isKeju && gameManager.isButter)
-    //    {
-    //        gameManager.tbKeju.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        gameManager.tbKeju.SetActive(false);
-    //    }
-    //}
-
-    //private void PesananNut()
-    //{
-    //    if (gameManager.isNut && gameManager.isButter)
-    //    {
-    //        gameManager.tbKacang.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        gameManager.tbKacang.SetActive(false);
-    //    }
-    //}
-
-    //private void PesananCokKej()
-    //{
-    //    if (gameManager.isChoco && gameManager.isButter && gameManager.isKeju)
-    //    {
-    //        gameManager.tbCokKej.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        gameManager.tbCokKej.SetActive(false);
-    //    }
-    //}
-
-    //private void PesananCokKac()
-    //{
-    //    if (gameManager.isChoco && gameManager.isButter && gameManager.isNut)
-    //    {
-    //        gameManager.tbCokKac.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        gameManager.tbCokKac.SetActive(false);
-    //    }
-    //}
-
-    //private void PesananKacKej()
-    //{
-    //    if (gameManager.isNut && gameManager.isButter && gameManager.isKeju)
-    //    {
-    //        gameManager.tbKacKej.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        gameManager.tbKacKej.SetActive(false);
-    //    }
-    //}
-
-    #endregion
-
-
 }
