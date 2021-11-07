@@ -98,12 +98,22 @@ public class GameTimer : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void PlayAds()
+    public void PlayAds1()
     {
         adsGame.SetActive(true);
         playAds = true;
         Time.timeScale = 0;
-        StartCoroutine(AdsCount());
+        StartCoroutine(AdsCount1());
+        bgmGame.mute = !bgmGame.mute;
+        loseUI.SetActive(false);
+    }
+
+    public void PlayAds2()
+    {
+        adsGame.SetActive(true);
+        playAds = true;
+        Time.timeScale = 0;
+        StartCoroutine(AdsCount2());
         bgmGame.mute = !bgmGame.mute;
         loseUI.SetActive(false);
     }
@@ -114,9 +124,18 @@ public class GameTimer : MonoBehaviour
         timerIsRunning = true;
     }
 
-    IEnumerator AdsCount()
+    IEnumerator AdsCount1()
     {
         yield return new WaitForSecondsRealtime(13);
+        Time.timeScale = 1;
+        bgmGame.mute = !bgmGame.mute;
+        adsGame.SetActive(false);
+        popAds.SetActive(true);
+    }
+
+    IEnumerator AdsCount2()
+    {
+        yield return new WaitForSecondsRealtime(7);
         Time.timeScale = 1;
         bgmGame.mute = !bgmGame.mute;
         adsGame.SetActive(false);

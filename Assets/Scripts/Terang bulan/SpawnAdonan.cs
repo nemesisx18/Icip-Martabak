@@ -21,6 +21,14 @@ public class SpawnAdonan : MonoBehaviour
     public Sprite kacangKeju;
     public Sprite spesial;
 
+    void Start()
+    {
+        
+        
+        
+        
+    }
+
     void Update()
     {
         if (gameManager.isChoco)
@@ -29,21 +37,33 @@ public class SpawnAdonan : MonoBehaviour
             spriteRenderer.sprite = kacang;
         if (gameManager.isKeju)
             spriteRenderer.sprite = keju;
-        if (gameManager.isChaCha)
-            chaCha.SetActive(true);
-        if (gameManager.isMatcha)
-            matcha.SetActive(true);
-        if (gameManager.isStrawberry)
-            strawberry.SetActive(true);
-        if (gameManager.isCorn)
-            corn.SetActive(true);
-
         if (gameManager.isChoco && gameManager.isNut)
             spriteRenderer.sprite = coklatKacang;
         if (gameManager.isChoco && gameManager.isKeju)
             spriteRenderer.sprite = coklatKeju;
         if (gameManager.isNut && gameManager.isKeju)
             spriteRenderer.sprite = kacangKeju;
+
+        if (gameManager.isChaCha)
+            chaCha.SetActive(true);
+        else
+            chaCha.SetActive(false);
+
+        if (gameManager.isMatcha)
+            matcha.SetActive(true);
+        else
+            matcha.SetActive(false);
+
+        if (gameManager.isStrawberry)
+            strawberry.SetActive(true);
+        else
+            strawberry.SetActive(false);
+
+        if (gameManager.isCorn)
+            corn.SetActive(true);
+        else
+            corn.SetActive(false);
+        
         if (gameManager.isChaCha && gameManager.isMatcha && gameManager.isStrawberry && gameManager.isCorn)
             spriteRenderer.sprite = spesial;
     }

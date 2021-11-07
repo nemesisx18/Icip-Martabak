@@ -195,7 +195,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 96c792ce03eec1d48a90abb7b392b586, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74fad6fd7d475974680c9d93961eed6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1740,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -50, y: 50}
-  m_SizeDelta: {x: 70, y: 70}
+  m_AnchoredPosition: {x: -94, y: 70}
+  m_SizeDelta: {x: 95.76, y: 95.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300748391
 MonoBehaviour:
@@ -2989,8 +2989,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -35, y: -35}
-  m_SizeDelta: {x: 55, y: 60}
+  m_AnchoredPosition: {x: -54, y: -70}
+  m_SizeDelta: {x: 78.91, y: 86.083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446644251
 MonoBehaviour:
@@ -3160,6 +3160,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 452531466}
+  coklat: {fileID: 21300000, guid: 5b9f7d831dd62f545a4650b460e2225a, type: 3}
+  kacang: {fileID: 21300000, guid: fe3e320335f2165439c731e2f28801da, type: 3}
+  keju: {fileID: 21300000, guid: 8e3a8d276e187ef47b97aa43ee9c1b5a, type: 3}
+  chaCha: {fileID: 0}
+  matcha: {fileID: 0}
+  strawberry: {fileID: 0}
+  corn: {fileID: 0}
+  coklatKacang: {fileID: 21300000, guid: c912df4a3e7905243bd9e9de0f86c605, type: 3}
+  coklatKeju: {fileID: 21300000, guid: c71734478c4063447804ae651824f9d2, type: 3}
+  kacangKeju: {fileID: 21300000, guid: 43d1685fede07bb4fa27b44d0558a31b, type: 3}
+  spesial: {fileID: 21300000, guid: fb417417792a3164982477f02f2b8d20, type: 3}
 --- !u!212 &452531466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3199,7 +3211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4048,7 +4060,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -4292,8 +4304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170, y: 45}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 252.32, y: 157}
+  m_SizeDelta: {x: 197.92, y: 197.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &647267574
 GameObject:
@@ -5111,8 +5123,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -91.29999, y: -35.899994}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: -155, y: -70}
+  m_SizeDelta: {x: 60.75, y: 60.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &768659373
 MonoBehaviour:
@@ -6446,11 +6458,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -7241,7 +7253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 16322d1ba7d21db4f9ce54739887cd5b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 507a967502df1e94083189d9eee6b065, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7317,7 +7329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 978ec3c4173576d4c830bdf4fbba9c85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d94f241cb7c3fc44f94945d3a8e2e797, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7418,7 +7430,6 @@ MonoBehaviour:
   level2: 0
   level3: 0
   isCooked: 0
-  TBObject: {fileID: 2237010986258074951, guid: 3ea3881bb62ec454483b0cb02f625cb3, type: 3}
   butterQty: 0
   isButterSold: 0
   isButter: 0
@@ -7448,13 +7459,28 @@ MonoBehaviour:
   kejuItem:
   - {fileID: 1836037996}
   - {fileID: 301160174}
+  chaChaQty: 0
+  isChaCha: 0
+  chaChaText: {fileID: 0}
+  chaChaItem: []
+  matchaQty: 0
+  isMatcha: 0
+  matchaText: {fileID: 0}
+  matchaItem: []
+  strawberryQty: 0
+  isStrawberry: 0
+  strawberryText: {fileID: 0}
+  strawberryItem: []
+  cornQty: 0
+  isCorn: 0
+  cornText: {fileID: 0}
+  cornItem: []
   tbCokKej: {fileID: 0}
   tbCokKac: {fileID: 0}
   tbKacKej: {fileID: 0}
+  tbSpesial: {fileID: 0}
   prepCanvas: {fileID: 593809133}
   dropPointInstance: {fileID: 1699152773}
-  mobil1: {fileID: 8972529860627670450}
-  mobil2: {fileID: 7495856590356644587}
 --- !u!114 &1180086668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8253,8 +8279,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 720, y: 1280}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -8458,7 +8484,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -8964,7 +8990,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -10322,8 +10348,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -19.4, y: -34}
-  m_SizeDelta: {x: 83.75, y: 30}
+  m_AnchoredPosition: {x: -0.0000009536743, y: -69.399994}
+  m_SizeDelta: {x: 144.8, y: 51.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1732498908
 MonoBehaviour:
@@ -10347,7 +10373,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 23944d516f0659b4baf4fc1479492ffa, type: 3}
-    m_FontSize: 24
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -10886,7 +10912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f53fb39dbe62a14e928cc039ef52f51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2943fcb8b9a459f48a37c7bc1f409bab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11108,7 +11134,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -12513,7 +12539,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1180086665}
         m_TargetAssemblyTypeName: GameTimer, Assembly-CSharp
-        m_MethodName: PlayAds
+        m_MethodName: PlayAds1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

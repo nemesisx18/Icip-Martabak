@@ -231,6 +231,33 @@ public class GameManager : MonoBehaviour
             {
                 tbSpesial.SetActive(false);
             }
+
+            if (isButter && isChoco)
+            {
+                tbCoklat.SetActive(true);
+            }
+            else
+            {
+                tbCoklat.SetActive(false);
+            }
+
+            if (isButter && isKeju)
+            {
+                tbKeju.SetActive(true);
+            }
+            else
+            {
+                tbKeju.SetActive(false);
+            }
+
+            if (isButter && isNut)
+            {
+                tbKacang.SetActive(true);
+            }
+            else
+            {
+                tbKacang.SetActive(false);
+            }
         }
     }
 

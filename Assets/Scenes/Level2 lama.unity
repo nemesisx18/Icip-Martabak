@@ -2044,6 +2044,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!212 &329627186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2108,9 +2118,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCoklat: {fileID: 372268459536837547, guid: 389508a76b162c34fafc8a734f4b528c, type: 3}
-  baseCoklat: {fileID: 329627182}
   spawnTB: {fileID: 803646825}
   gameManager: {fileID: 1180086667}
+  selectedObject: {fileID: 0}
 --- !u!1 &352403525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,9 +2635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCoklat: {fileID: 372268459536837547, guid: 377b7995acb652143bf681a7d480757f, type: 3}
-  baseCoklat: {fileID: 410498706}
   spawnTB: {fileID: 803646825}
   gameManager: {fileID: 1180086667}
+  selectedObject: {fileID: 0}
 --- !u!70 &410498709
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2657,6 +2667,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!212 &410498711
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3019,6 +3039,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!212 &452531466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5156,6 +5186,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!61 &772903574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5543,9 +5583,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCoklat: {fileID: 372268459536837547, guid: a6cabbead4a812d439ce116679788a2e, type: 3}
-  baseCoklat: {fileID: 866398388}
   spawnTB: {fileID: 803646825}
   gameManager: {fileID: 1180086667}
+  selectedObject: {fileID: 0}
 --- !u!70 &866398391
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5575,6 +5615,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!212 &866398393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5727,6 +5777,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!212 &872865297
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5791,9 +5851,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCoklat: {fileID: 372268459536837547, guid: a3dcb951a70fbb943b32338e7fb238f8, type: 3}
-  baseCoklat: {fileID: 872865293}
   spawnTB: {fileID: 803646825}
   gameManager: {fileID: 1180086667}
+  selectedObject: {fileID: 0}
 --- !u!1 &916704554
 GameObject:
   m_ObjectHideFlags: 0
@@ -7279,6 +7339,7 @@ MonoBehaviour:
   level1: 0
   level2: 1
   level3: 0
+  isCooked: 0
   butterQty: 0
   isButterSold: 0
   isButter: 0
@@ -7308,9 +7369,26 @@ MonoBehaviour:
   kejuItem:
   - {fileID: 1836037996}
   - {fileID: 301160174}
+  chaChaQty: 0
+  isChaCha: 0
+  chaChaText: {fileID: 0}
+  chaChaItem: []
+  matchaQty: 0
+  isMatcha: 0
+  matchaText: {fileID: 0}
+  matchaItem: []
+  strawberryQty: 0
+  isStrawberry: 0
+  strawberryText: {fileID: 0}
+  strawberryItem: []
+  cornQty: 0
+  isCorn: 0
+  cornText: {fileID: 0}
+  cornItem: []
   tbCokKej: {fileID: 872865293}
   tbCokKac: {fileID: 329627182}
   tbKacKej: {fileID: 410498706}
+  tbSpesial: {fileID: 0}
   prepCanvas: {fileID: 593809133}
   dropPointInstance: {fileID: 1699152773}
 --- !u!114 &1180086668
@@ -9573,6 +9651,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1180086667}
+  spriteRenderer: {fileID: 0}
+  adonanMatang: {fileID: 0}
+  adonanMasak: {fileID: 0}
+  adonanTB: {fileID: 0}
+  timer: {fileID: 0}
+  destTB: {fileID: 0}
+  defaultTB: {fileID: 0}
+  anim: {fileID: 0}
+  masak: {fileID: 0}
+  matang: {fileID: 0}
 --- !u!1 &1724326061
 GameObject:
   m_ObjectHideFlags: 0
@@ -12445,6 +12533,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  clip: {fileID: 0}
 --- !u!61 &7397943634753661329
 BoxCollider2D:
   m_ObjectHideFlags: 0
