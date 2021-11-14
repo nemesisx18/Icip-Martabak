@@ -7423,7 +7423,7 @@ MonoBehaviour:
   clipWin: {fileID: 8300000, guid: 7893db5e04b08744eb8443cb60b899ed, type: 3}
   customerDone: 0
   targetKustomer: 10
-  modalAwal: 200000
+  modalAwal: 65000
   isShopOpen: 1
   pausedMenu: 0
   level1: 1
@@ -12395,7 +12395,7 @@ Transform:
   m_GameObject: {fileID: 2075527614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.66, y: -1.75, z: 0}
-  m_LocalScale: {x: 0.3928705, y: 0.3928705, z: 0.3928705}
+  m_LocalScale: {x: 0.44319722, y: 0.44319722, z: 0.44319722}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10

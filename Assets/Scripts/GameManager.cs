@@ -404,6 +404,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void FinishLevel()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1;
+    }
+
     public void GojekOrder()
     {
         Application.OpenURL("https://gofood.co.id/english/bandar-lampung/restaurant/martabak-bangka-anugrah-koga-za-pagar-alam-0bfeb9d3-cd37-4139-bcc2-78fbc6f90f05");
