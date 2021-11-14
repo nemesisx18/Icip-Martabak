@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 776cd7d96e4169140b341fb48165e417
+guid: c383c1a7ab30b47429123ddb8de32deb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8534965757941057205
-    second: idle owner_0
+      213: 6857217897207337515
+    second: kasir
   - first:
-      213: 1572096672223133035
-    second: idle owner_1
+      213: -6597452653745053629
+    second: kompor
   - first:
-      213: 3725580635751071006
-    second: idle owner_2
+      213: 6909599680213696635
+    second: Asset-04_2
   - first:
-      213: 4998222294132010665
-    second: idle owner_3
+      213: -1170896412882618762
+    second: Asset-04_3
+  - first:
+      213: 3415683667125066312
+    second: Asset-04_4
+  - first:
+      213: -802104761725604757
+    second: Asset-04_5
+  - first:
+      213: 6887560311266036426
+    second: Asset-04_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle owner_0
+      name: kasir
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 472
-        height: 771
+        x: 74
+        y: 375
+        width: 339
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b49fcc30dd5bd8980800000000000000
-      internalID: -8534965757941057205
+      spriteID: b229e7ea85bb92f50800000000000000
+      internalID: 6857217897207337515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_1
+      name: kompor
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1
-        width: 462
-        height: 766
+        x: 466
+        y: 381
+        width: 504
+        height: 290
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6dfe64189531d510800000000000000
-      internalID: 1572096672223133035
+      spriteID: 340611724c32174a0800000000000000
+      internalID: -6597452653745053629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_2
+      name: Asset-04_2
       rect:
         serializedVersion: 2
-        x: 1013
-        y: 0
-        width: 480
-        height: 771
+        x: 1059
+        y: 523
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1d340869dbe3b330800000000000000
-      internalID: 3725580635751071006
+      spriteID: b704a4fec44d3ef50800000000000000
+      internalID: 6909599680213696635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_3
+      name: Asset-04_3
       rect:
         serializedVersion: 2
-        x: 1526
-        y: 2
-        width: 462
-        height: 766
+        x: 955
+        y: 358
+        width: 233
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +201,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ae2d2ed1b04d5540800000000000000
-      internalID: 4998222294132010665
+      spriteID: 6763a598ae320cfe0800000000000000
+      internalID: -1170896412882618762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset-04_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 114
+        width: 328
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ad71cb232f66f20800000000000000
+      internalID: 3415683667125066312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset-04_5
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 75
+        width: 259
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c22bc08f95ed4f0800000000000000
+      internalID: -802104761725604757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset-04_6
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 82
+        width: 417
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca471a7c97859f50800000000000000
+      internalID: 6887560311266036426
       vertices: []
       indices: 
       edges: []

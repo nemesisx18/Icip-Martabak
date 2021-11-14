@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: 776cd7d96e4169140b341fb48165e417
+guid: da144188cbf985f4db2bd0a3f9ed7e5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8534965757941057205
-    second: idle owner_0
+      213: -9070544781826274019
+    second: Pop up Bahan-07_0
   - first:
-      213: 1572096672223133035
-    second: idle owner_1
+      213: 2347490612168502848
+    second: Pop up Bahan-07_1
   - first:
-      213: 3725580635751071006
-    second: idle owner_2
+      213: -932378602968161684
+    second: Pop up Bahan-07_2
   - first:
-      213: 4998222294132010665
-    second: idle owner_3
+      213: -5211257348479577353
+    second: Pop up Bahan-07_3
+  - first:
+      213: 1067754492723237550
+    second: Pop up Bahan-07_4
+  - first:
+      213: -5615993408278594268
+    second: Pop up Bahan-07_5
+  - first:
+      213: -4639642958809526302
+    second: Pop up Bahan-07_6
+  - first:
+      213: 4842816139161722747
+    second: Pop up Bahan-07_7
+  - first:
+      213: -8301587463516325927
+    second: Pop up Bahan-07_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +73,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle owner_0
+      name: Pop up Bahan-07_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 472
-        height: 771
+        x: 30
+        y: 262
+        width: 161
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b49fcc30dd5bd8980800000000000000
-      internalID: -8534965757941057205
+      spriteID: d1dc8f72493fe1280800000000000000
+      internalID: -9070544781826274019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_1
+      name: Pop up Bahan-07_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1
-        width: 462
-        height: 766
+        x: 217
+        y: 262
+        width: 162
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6dfe64189531d510800000000000000
-      internalID: 1572096672223133035
+      spriteID: 04e2ed33646f39020800000000000000
+      internalID: 2347490612168502848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_2
+      name: Pop up Bahan-07_2
       rect:
         serializedVersion: 2
-        x: 1013
-        y: 0
-        width: 480
-        height: 771
+        x: 422
+        y: 262
+        width: 161
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1d340869dbe3b330800000000000000
-      internalID: 3725580635751071006
+      spriteID: c6268edb9968f03f0800000000000000
+      internalID: -932378602968161684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_3
+      name: Pop up Bahan-07_3
       rect:
         serializedVersion: 2
-        x: 1526
-        y: 2
-        width: 462
-        height: 766
+        x: 626
+        y: 262
+        width: 161
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +207,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ae2d2ed1b04d5540800000000000000
-      internalID: 4998222294132010665
+      spriteID: 7f21bbe4d05eda7b0800000000000000
+      internalID: -5211257348479577353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop up Bahan-07_4
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 262
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2981ecd0d61de00800000000000000
+      internalID: 1067754492723237550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop up Bahan-07_5
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 24
+        width: 162
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d7e9effbbff02b0800000000000000
+      internalID: -5615993408278594268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop up Bahan-07_6
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 24
+        width: 161
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef04839f4dac9fb0800000000000000
+      internalID: -4639642958809526302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop up Bahan-07_7
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 24
+        width: 161
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f5347ce93253340800000000000000
+      internalID: 4842816139161722747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pop up Bahan-07_8
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 24
+        width: 161
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7f5458f26dacc80800000000000000
+      internalID: -8301587463516325927
       vertices: []
       indices: 
       edges: []

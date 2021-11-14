@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -401685167256330832, guid: 0bc2352186d02e944a0fa19f41289076, type: 3}
+  m_Sprite: {fileID: 2954200026566432798, guid: cccebd87519231447924951af9a9ea55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -183,8 +183,8 @@ RectTransform:
   m_Father: {fileID: 4288217788176794465}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -294,8 +294,8 @@ RectTransform:
   m_Father: {fileID: 4288217788534622324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -650,13 +650,13 @@ MonoBehaviour:
   shopMenu: {fileID: 0}
   gameManager: {fileID: 0}
   gameTimer: {fileID: 0}
-  sliderTime: {fileID: 7443304529927741143}
   dishUI: {fileID: 7303201836358486720}
   clipCoin: {fileID: 8300000, guid: 3ed7e17154e97344a927d97b8a46e999, type: 3}
   walkSpeed: 2
   maxWalk: -7
   walkingDirection: -1
   respawnUI: 5
+  gameObjectTag: 
 --- !u!114 &7443304529927741143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7303201836358486724
 RectTransform:
   m_ObjectHideFlags: 0

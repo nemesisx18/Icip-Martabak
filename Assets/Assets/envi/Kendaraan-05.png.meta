@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 776cd7d96e4169140b341fb48165e417
+guid: f41ad5c4a6801cb4487860914cad0897
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8534965757941057205
-    second: idle owner_0
+      213: 7064547537038207447
+    second: Mobil kanan
   - first:
-      213: 1572096672223133035
-    second: idle owner_1
+      213: -4730982064938644451
+    second: mobil_kiri
   - first:
-      213: 3725580635751071006
-    second: idle owner_2
+      213: -4340137766812715119
+    second: motor
   - first:
-      213: 4998222294132010665
-    second: idle owner_3
+      213: 3533547994463978966
+    second: truk
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,85 +115,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle owner_0
+      name: Mobil kanan
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 472
-        height: 771
+        x: 85
+        y: 676
+        width: 756
+        height: 279
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b49fcc30dd5bd8980800000000000000
-      internalID: -8534965757941057205
+      spriteID: 7d9e50c2e805a0260800000000000000
+      internalID: 7064547537038207447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_1
+      name: mobil_kiri
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1
-        width: 462
-        height: 766
+        x: 965
+        y: 641
+        width: 756
+        height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6dfe64189531d510800000000000000
-      internalID: 1572096672223133035
+      spriteID: d1c8694b0ec285eb0800000000000000
+      internalID: -4730982064938644451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_2
+      name: motor
       rect:
         serializedVersion: 2
-        x: 1013
-        y: 0
-        width: 480
-        height: 771
+        x: 80
+        y: 60
+        width: 364
+        height: 362
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1d340869dbe3b330800000000000000
-      internalID: 3725580635751071006
+      spriteID: 197fed432bbb4c3c0800000000000000
+      internalID: -4340137766812715119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle owner_3
+      name: truk
       rect:
         serializedVersion: 2
-        x: 1526
-        y: 2
-        width: 462
-        height: 766
+        x: 520
+        y: 51
+        width: 796
+        height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ae2d2ed1b04d5540800000000000000
-      internalID: 4998222294132010665
+      spriteID: 6d5c1deed2fa90130800000000000000
+      internalID: 3533547994463978966
       vertices: []
       indices: 
       edges: []

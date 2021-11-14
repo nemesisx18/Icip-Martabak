@@ -352,7 +352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7023203475552823575, guid: b0b41833cd54310448c951ff5dee7743, type: 3}
+  m_Sprite: {fileID: 1352274633571626417, guid: cccebd87519231447924951af9a9ea55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -604,6 +604,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   gameTimer: {fileID: 0}
   dishUI: {fileID: 2966227748627376789}
+  checkList: []
   clipCoin: {fileID: 8300000, guid: 3ed7e17154e97344a927d97b8a46e999, type: 3}
   walkSpeed: 2
   maxWalk: -5
