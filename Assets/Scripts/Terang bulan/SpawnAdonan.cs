@@ -21,12 +21,18 @@ public class SpawnAdonan : MonoBehaviour
     public Sprite kacangKeju;
     public Sprite spesial;
 
+    private AudioSource audioLunak;
+    private AudioSource audioKeras;
+    public AudioClip clip1;
+    public AudioClip clip2;
+
     void Start()
     {
-        
-        
-        
-        
+        audioLunak = gameObject.AddComponent<AudioSource>();
+        audioKeras = gameObject.AddComponent<AudioSource>();
+
+        audioLunak.clip = clip1;
+        audioKeras.clip = clip2;
     }
 
     void Update()
@@ -77,6 +83,8 @@ public class SpawnAdonan : MonoBehaviour
                 gameManager.chocoQty -= 1;
                 gameManager.isChoco = true;
 
+                audioLunak.Play();
+
                 Debug.Log("The object is choco");
             }
 
@@ -84,6 +92,8 @@ public class SpawnAdonan : MonoBehaviour
             {
                 gameManager.nutQty -= 1;
                 gameManager.isNut = true;
+
+                audioKeras.Play();
 
                 Debug.Log("The object is nut");
             }
@@ -93,6 +103,8 @@ public class SpawnAdonan : MonoBehaviour
                 gameManager.kejuQty -= 1;
                 gameManager.isKeju = true;
 
+                audioLunak.Play();
+
                 Debug.Log("The object is keju");
             }
 
@@ -100,24 +112,32 @@ public class SpawnAdonan : MonoBehaviour
             {
                 gameManager.chaChaQty -= 1;
                 gameManager.isChaCha = true;
+
+                audioKeras.Play();
             }
 
             if (collision.tag == "Matcha")
             {
                 gameManager.matchaQty -= 1;
                 gameManager.isMatcha = true;
+
+                audioLunak.Play();
             }
 
             if (collision.tag == "Strawberry")
             {
                 gameManager.strawberryQty -= 1;
                 gameManager.isStrawberry = true;
+
+                audioLunak.Play();
             }
 
             if (collision.tag == "Corn")
             {
                 gameManager.cornQty -= 1;
                 gameManager.isCorn = true;
+
+                audioKeras.Play();
             }
         }
     }

@@ -2629,7 +2629,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1180086665}
         m_TargetAssemblyTypeName: GameTimer, Assembly-CSharp
-        m_MethodName: PlayAds
+        m_MethodName: PlayAds2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3905,6 +3905,8 @@ MonoBehaviour:
   coklatKeju: {fileID: 21300000, guid: c71734478c4063447804ae651824f9d2, type: 3}
   kacangKeju: {fileID: 21300000, guid: 43d1685fede07bb4fa27b44d0558a31b, type: 3}
   spesial: {fileID: 21300000, guid: fb417417792a3164982477f02f2b8d20, type: 3}
+  clip1: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!212 &452531466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6910,7 +6912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5f6cbeceaa99fc34a931493b7b3515cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af1271deaa9806a4cb920a5a9b3ce5e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10978,7 +10980,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20, y: 20}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 20, y: 20}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11026,12 +11028,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: 5f6cbeceaa99fc34a931493b7b3515cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af1271deaa9806a4cb920a5a9b3ce5e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 20, y: 20}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

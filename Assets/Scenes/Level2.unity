@@ -3111,6 +3111,8 @@ MonoBehaviour:
   coklatKeju: {fileID: 21300000, guid: c71734478c4063447804ae651824f9d2, type: 3}
   kacangKeju: {fileID: 21300000, guid: 43d1685fede07bb4fa27b44d0558a31b, type: 3}
   spesial: {fileID: 21300000, guid: fb417417792a3164982477f02f2b8d20, type: 3}
+  clip1: {fileID: 8300000, guid: 875bef76aaf83fd468eaaa03e95cf09f, type: 3}
+  clip2: {fileID: 8300000, guid: 3cd977b5325b138419c7e4676672fef1, type: 3}
 --- !u!212 &452531466
 SpriteRenderer:
   m_ObjectHideFlags: 0
