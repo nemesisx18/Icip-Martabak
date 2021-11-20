@@ -27,7 +27,7 @@ public class coklatControl : MonoBehaviour
 
             if (targetObject)
             {
-                selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
+                //selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
                 offset = selectedObject.transform.position - mousePosition;
             }
         }

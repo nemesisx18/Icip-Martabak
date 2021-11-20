@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public Text moneyText;
     public GameObject winCanvas;
     public GameObject pauseUI;
-    private AudioSource audioWin;
+    public AudioSource audioWin;
     public AudioClip clipWin;
 
     public int customerDone;
@@ -99,6 +99,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject prepCanvas;
     [SerializeField] private GameObject dropPointInstance;
 
+    public bool isStart;
+
     void Start()
     {
         Time.timeScale = 1;
@@ -109,155 +111,164 @@ public class GameManager : MonoBehaviour
 
         prepCanvas.SetActive(true);
 
-        audioWin = gameObject.AddComponent<AudioSource>();
-        audioWin.clip = clipWin;
+        isStart = true;
     }
 
     void Update()
     {
-        moneyText.text = moneyAmount.ToString();
-
-        //List Item
-        ItemMentega();
-        ItemChoco();
-        ItemNut();
-        ItemKeju();
-
-        if (level3)
+        if (isStart == true)
         {
-            ItemChaCha();
-            ItemMatcha();
-            ItemStrawberry();
-            ItemCorn();
+            moneyText.text = moneyAmount.ToString();
+
+            //List Item
+            ItemMentega();
+            ItemChoco();
+            ItemNut();
+            ItemKeju();
+
+            if (level3)
+            {
+                ItemChaCha();
+                ItemMatcha();
+                ItemStrawberry();
+                ItemCorn();
+            }
+
+            if (isShopOpen == true)
+            {
+                prepCanvas.SetActive(true);
+            }
+
+            if (customerDone == targetKustomer)
+            {
+                winCanvas.SetActive(true);
+                Debug.Log("lol");
+                audioWin.PlayOneShot(clipWin);
+                Time.timeScale = 0;
+                isStart = false;
+            }
+
+            if (isButter)
+            {
+                tbBase.SetActive(true);
+            }
+            else
+            {
+                tbBase.SetActive(false);
+            }
+
+            if (level1)
+            {
+                if (isButter && isChoco)
+                {
+                    tbCoklat.SetActive(true);
+                }
+                else
+                {
+                    tbCoklat.SetActive(false);
+                }
+
+                if (isButter && isKeju)
+                {
+                    tbKeju.SetActive(true);
+                }
+                else
+                {
+                    tbKeju.SetActive(false);
+                }
+
+                if (isButter && isNut)
+                {
+                    tbKacang.SetActive(true);
+                }
+                else
+                {
+                    tbKacang.SetActive(false);
+                }
+            }
+
+            else if (level2)
+            {
+                if (isButter && isChoco && isKeju)
+                {
+                    tbCokKej.SetActive(true);
+                }
+                else
+                {
+                    tbCokKej.SetActive(false);
+                }
+
+                if (isButter && isChoco && isNut)
+                {
+                    tbCokKac.SetActive(true);
+                }
+                else
+                {
+                    tbCokKac.SetActive(false);
+                }
+
+                if (isButter && isNut && isKeju)
+                {
+                    tbKacKej.SetActive(true);
+                }
+                else
+                {
+                    tbKacKej.SetActive(false);
+                }
+
+                if (isButter && isKeju)
+                {
+                    tbKeju.SetActive(true);
+                }
+                else
+                {
+                    tbKeju.SetActive(false);
+                }
+            }
+
+            else if (level3)
+            {
+                if (isButter && isChaCha && isMatcha && isStrawberry && isCorn)
+                {
+                    tbSpesial.SetActive(true);
+                }
+                else
+                {
+                    tbSpesial.SetActive(false);
+                }
+
+                if (isButter && isChoco)
+                {
+                    tbCoklat.SetActive(true);
+                }
+                else
+                {
+                    tbCoklat.SetActive(false);
+                }
+
+                if (isButter && isKeju)
+                {
+                    tbKeju.SetActive(true);
+                }
+                else
+                {
+                    tbKeju.SetActive(false);
+                }
+
+                if (isButter && isNut)
+                {
+                    tbKacang.SetActive(true);
+                }
+                else
+                {
+                    tbKacang.SetActive(false);
+                }
+            }
         }
 
-        if (isShopOpen == true)
-        {
-            prepCanvas.SetActive(true);
-        }
-
-        if (customerDone == targetKustomer)
-        {
-            winCanvas.SetActive(true);
-            audioWin.Play();
-            Time.timeScale = 0;
-        }
-
-        if (isButter)
-        {
-            tbBase.SetActive(true);
-        }
         else
         {
-            tbBase.SetActive(false);
-        }
-
-        if (level1)
-        {
-            if (isButter && isChoco)
-            {
-                tbCoklat.SetActive(true);
-            }
-            else
-            {
-                tbCoklat.SetActive(false);
-            }
-
-            if (isButter && isKeju)
-            {
-                tbKeju.SetActive(true);
-            }
-            else
-            {
-                tbKeju.SetActive(false);
-            }
-
-            if (isButter && isNut)
-            {
-                tbKacang.SetActive(true);
-            }
-            else
-            {
-                tbKacang.SetActive(false);
-            }
-        }
-
-        else if (level2)
-        {
-            if (isButter && isChoco && isKeju)
-            {
-                tbCokKej.SetActive(true);
-            }
-            else
-            {
-                tbCokKej.SetActive(false);
-            }
-
-            if (isButter && isChoco && isNut)
-            {
-                tbCokKac.SetActive(true);
-            }
-            else
-            {
-                tbCokKac.SetActive(false);
-            }
-
-            if (isButter && isNut && isKeju)
-            {
-                tbKacKej.SetActive(true);
-            }
-            else
-            {
-                tbKacKej.SetActive(false);
-            }
-
-            if (isButter && isKeju)
-            {
-                tbKeju.SetActive(true);
-            }
-            else
-            {
-                tbKeju.SetActive(false);
-            }
-        }
-
-        else if(level3)
-        {
-            if (isButter && isChaCha && isMatcha && isStrawberry && isCorn)
-            {
-                tbSpesial.SetActive(true);
-            }
-            else
-            {
-                tbSpesial.SetActive(false);
-            }
-
-            if (isButter && isChoco)
-            {
-                tbCoklat.SetActive(true);
-            }
-            else
-            {
-                tbCoklat.SetActive(false);
-            }
-
-            if (isButter && isKeju)
-            {
-                tbKeju.SetActive(true);
-            }
-            else
-            {
-                tbKeju.SetActive(false);
-            }
-
-            if (isButter && isNut)
-            {
-                tbKacang.SetActive(true);
-            }
-            else
-            {
-                tbKacang.SetActive(false);
-            }
+            Debug.Log("game selesai");
         }
     }
 

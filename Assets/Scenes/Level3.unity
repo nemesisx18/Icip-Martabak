@@ -10076,6 +10076,7 @@ GameObject:
   - component: {fileID: 1180086667}
   - component: {fileID: 1180086668}
   - component: {fileID: 1180086669}
+  - component: {fileID: 1180086670}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -10102,7 +10103,8 @@ MonoBehaviour:
   loseUI: {fileID: 263240840}
   adsGame: {fileID: 3571825550076453980}
   popAds: {fileID: 1848312496}
-  clip: {fileID: 8300000, guid: 180dcfcd6ddb2b04781ebdb576654bf0, type: 3}
+  clipLose: {fileID: 8300000, guid: 180dcfcd6ddb2b04781ebdb576654bf0, type: 3}
+  audioClip: {fileID: 1180086670}
   bgmGame: {fileID: 519420033}
   shopMenu: {fileID: 1180086668}
 --- !u!4 &1180086666
@@ -10136,6 +10138,7 @@ MonoBehaviour:
   moneyText: {fileID: 1997376802}
   winCanvas: {fileID: 1025201844}
   pauseUI: {fileID: 1310491625}
+  audioWin: {fileID: 1180086670}
   clipWin: {fileID: 8300000, guid: 7893db5e04b08744eb8443cb60b899ed, type: 3}
   customerDone: 0
   targetKustomer: 10
@@ -10205,6 +10208,7 @@ MonoBehaviour:
   tbSpesial: {fileID: 1296594472}
   prepCanvas: {fileID: 593809133}
   dropPointInstance: {fileID: 1699152773}
+  isStart: 0
 --- !u!114 &1180086668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10232,6 +10236,7 @@ MonoBehaviour:
   butterButton: {fileID: 575805447}
   videoButton: {fileID: 300748389}
   clip: {fileID: 8300000, guid: 0d47a9d63f3f83c41bf9b300fe23e67e, type: 3}
+  audioSFX: {fileID: 0}
 --- !u!114 &1180086669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10265,6 +10270,102 @@ MonoBehaviour:
   customerObject_2: {fileID: 7298490215373220648, guid: 148937303f641f241911c1259d23b721, type: 3}
   customerObject_3: {fileID: 7298490215373220648, guid: 967ab9380e789ba47918ab2a5575f5ac, type: 3}
   customerObject_4: {fileID: 7298490215373220648, guid: 77a7ea1831206af46acbc6862d07be39, type: 3}
+--- !u!82 &1180086670
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180086664}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1184249262
 GameObject:
   m_ObjectHideFlags: 0

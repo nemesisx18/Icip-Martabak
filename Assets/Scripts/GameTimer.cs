@@ -14,8 +14,8 @@ public class GameTimer : MonoBehaviour
     public GameObject loseUI;
     public GameObject adsGame;
     public GameObject popAds;
-    public AudioClip clip;
-    private AudioSource audioLose;
+    public AudioClip clipLose;
+    public AudioSource audioClip;
     public AudioSource bgmGame;
 
     public ShopMenu shopMenu;
@@ -25,9 +25,6 @@ public class GameTimer : MonoBehaviour
     void Start()
     {
         gameManager = GetComponent<GameManager>();
-
-        audioLose = gameObject.AddComponent<AudioSource>();
-        audioLose.clip = clip;
 
         // Starts the timer automatically
         StartCoroutine(StartTime());
@@ -55,7 +52,7 @@ public class GameTimer : MonoBehaviour
                 gameManager.pausedMenu = true;
                 Time.timeScale = 0;
                 loseUI.SetActive(true);
-                audioLose.Play();
+                audioClip.PlayOneShot(clipLose);
             }
         }
     }

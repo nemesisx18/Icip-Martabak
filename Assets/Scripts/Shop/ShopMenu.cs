@@ -20,7 +20,7 @@ public class ShopMenu : MonoBehaviour
 
     public GameObject videoButton;
     public AudioClip clip;
-    private AudioSource audioSFX;
+    public AudioSource audioSFX;
 
     GameManager gameManager;
 
@@ -29,9 +29,6 @@ public class ShopMenu : MonoBehaviour
         gameManager = GetComponent<GameManager>();
 
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
-
-        audioSFX = gameObject.AddComponent<AudioSource>();
-        audioSFX.clip = clip;
     }
 
     void Update()
@@ -65,56 +62,56 @@ public class ShopMenu : MonoBehaviour
     {
         moneyAmount -= 5000;
         gameManager.butterQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void ChocoItem()
     {
         moneyAmount -= 10000;
         gameManager.chocoQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void NutItem()
     {
         moneyAmount -= 10000;
         gameManager.nutQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void KejuItem()
     {
         moneyAmount -= 10000;
         gameManager.kejuQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void ChaChaItem()
     {
         moneyAmount -= 10000;
         gameManager.chaChaQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void MatchaItem()
     {
         moneyAmount -= 10000;
         gameManager.matchaQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void StrawberryItem()
     {
         moneyAmount -= 10000;
         gameManager.strawberryQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void CornItem()
     {
         moneyAmount -= 10000;
         gameManager.cornQty += 1;
-        audioSFX.Play();
+        audioSFX.PlayOneShot(clip);
     }
 
     public void FinishPrep()
