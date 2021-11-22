@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     
     public GameObject popupSetting;
     public GameObject aboutSetting;
+    public GameObject menuMartabak;
 
     void Start()
     {
@@ -61,7 +62,8 @@ public class MainMenu : MonoBehaviour
 
     public void MenuMartabak()
     {
-        SceneManager.LoadScene("MenuMartabak");
+        //SceneManager.LoadScene("MenuMartabak");
+        menuMartabak.SetActive(true);
         audioSource.Play();
     }
 

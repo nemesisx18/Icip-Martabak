@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: dcaee26c0fa45d84b8922afa5aa2337d
   - enabled: 1
-    path: Assets/Scenes/MenuMartabak.unity
-    guid: 01e9e6934166eb247bb2b7acc8a50322
-  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

@@ -12,14 +12,15 @@ public class MenuMartabakku : MonoBehaviour
     public GameObject coklatKeju;
     public GameObject kacangKeju;
     public GameObject spesial;
+    public GameObject menuMartabak;
 
     public AudioSource source;
     public AudioClip clip;
 
     public void ReturnHome()
     {
-        SceneManager.LoadScene("MainMenu");
-
+        //SceneManager.LoadScene("MainMenu");
+        menuMartabak.SetActive(false);
         source.PlayOneShot(clip);
     }
 
