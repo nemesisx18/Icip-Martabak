@@ -452,6 +452,7 @@ MonoBehaviour:
   coklatKeju: {fileID: 113614618}
   kacangKeju: {fileID: 1207690098}
   spesial: {fileID: 188407994}
+  menuMartabak: {fileID: 0}
   source: {fileID: 122938981}
   clip: {fileID: 8300000, guid: 9b8708dbb03bacc4d9fa3539a88ae512, type: 3}
 --- !u!82 &122938981
@@ -1122,7 +1123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &362780723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1162,7 +1163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 975056b34fc2f3e48bfc8cf7b611d823, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 038c453d3b5319f48945f1bbc31b7d3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2586,7 +2587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.3, y: -263.04}
+  m_AnchoredPosition: {x: 22.3, y: -253.1}
   m_SizeDelta: {x: 389.82, y: 108.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &914495272

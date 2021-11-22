@@ -10,6 +10,7 @@ public class Customer_1 : MonoBehaviour
     public GameTimer gameTimer;
 
     public GameObject dishUI;
+    public GameObject tyBanner;
     
     private AudioSource audioCoin;
     public AudioClip clipCoin;
@@ -18,12 +19,14 @@ public class Customer_1 : MonoBehaviour
     public float maxWalk;
     public float walkingDirection = 1.0f;
     public float respawnUI;
+    public bool isWalk;
 
     public string gameObjectTag;
 
     float originalX;
     Animator anim;
     Vector2 walkAmount;
+    Vector2 leftArea;
 
     public void Setup1(CustSpawn _custSpawn)
     {
@@ -43,6 +46,7 @@ public class Customer_1 : MonoBehaviour
         StartCoroutine(WaitSpawn());
 
         anim.SetBool("isIdle", false);
+        tyBanner.SetActive(false);
     }
 
     void Update()
@@ -55,15 +59,22 @@ public class Customer_1 : MonoBehaviour
         {
             dishUI.SetActive(false);
         }
-        
-        //kustomer gerak
-        walkAmount.x = walkingDirection * walkSpeed * Time.deltaTime;
-        if (walkingDirection < 0.0f && transform.position.x <= originalX + maxWalk)
-        {
-            walkingDirection = 0f;
-        }
 
-        transform.Translate(walkAmount);
+        //kustomer gerak
+        if (isWalk == true)
+        {
+            walkAmount.x = walkingDirection * walkSpeed * Time.deltaTime;
+            if (walkingDirection < 0.0f && transform.position.x <= originalX + maxWalk)
+            {
+                walkingDirection = 0f;
+            }
+
+            transform.Translate(walkAmount);
+        }
+        else
+        {
+            StartCoroutine(DoneLeft());
+        }
 
         //if(gameManager.level1)
         //{
@@ -80,10 +91,11 @@ public class Customer_1 : MonoBehaviour
         //}
     }
 
-    public void DoneLeft()
+    IEnumerator DoneLeft()
     {
-        walkAmount.x = 3f * walkSpeed * Time.deltaTime;
-        transform.Translate(walkAmount);
+        yield return new WaitForSecondsRealtime(1f);
+        leftArea.x = -5f * 0.5f * Time.deltaTime;
+        transform.Translate(leftArea);
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -96,7 +108,9 @@ public class Customer_1 : MonoBehaviour
                 audioCoin.Play();
 
                 Destroy(collision.gameObject);
-                Destroy(this.gameObject);
+                Destroy(this.gameObject, 2.5f);
+
+                isWalk = false;
 
                 custSpawn.custQty -= 1;
                 custSpawn.isSpawned = false;
@@ -104,6 +118,8 @@ public class Customer_1 : MonoBehaviour
                 gameManager.customerDone += 1;
                 gameManager.isButter = false;
                 gameManager.isChoco = false;
+
+                tyBanner.SetActive(true);
 
                 Debug.Log("ini rasa coklat");
             }
@@ -117,7 +133,9 @@ public class Customer_1 : MonoBehaviour
                 audioCoin.Play();
 
                 Destroy(collision.gameObject);
-                Destroy(this.gameObject);
+                Destroy(this.gameObject, 2.5f);
+
+                isWalk = false;
 
                 custSpawn.custQty -= 1;
                 custSpawn.isSpawned = false;
@@ -126,6 +144,8 @@ public class Customer_1 : MonoBehaviour
                 gameManager.isButter = false;
                 gameManager.isChoco = false;
                 gameManager.isNut = false;
+
+                tyBanner.SetActive(true);
 
                 Debug.Log("ini rasa coklat kacang");
             }

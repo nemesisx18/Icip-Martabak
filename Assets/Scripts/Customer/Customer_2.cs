@@ -10,6 +10,7 @@ public class Customer_2 : MonoBehaviour
     public GameTimer gameTimer;
 
     public GameObject dishUI;
+    public GameObject tyBanner;
 
     private AudioSource audioCoin;
     public AudioClip clipCoin;
@@ -18,10 +19,12 @@ public class Customer_2 : MonoBehaviour
     public float maxWalk;
     public float walkingDirection = 1.0f;
     public float respawnUI;
+    public bool isWalk;
 
     float originalX;
     Animator anim;
     Vector2 walkAmount;
+    Vector2 leftArea;
 
     public void Setup2(CustSpawn _custSpawn)
     {
@@ -41,6 +44,7 @@ public class Customer_2 : MonoBehaviour
         StartCoroutine(WaitSpawn());
 
         anim.SetBool("isIdle", false);
+        tyBanner.SetActive(false);
     }
 
     void Update()
@@ -54,13 +58,21 @@ public class Customer_2 : MonoBehaviour
             dishUI.SetActive(false);
         }
 
-        walkAmount.x = walkingDirection * walkSpeed * Time.deltaTime;
-        if (walkingDirection < 0.0f && transform.position.x <= originalX + maxWalk)
+        //kustomer gerak
+        if (isWalk == true)
         {
-            walkingDirection = 0f;
-        }
+            walkAmount.x = walkingDirection * walkSpeed * Time.deltaTime;
+            if (walkingDirection < 0.0f && transform.position.x <= originalX + maxWalk)
+            {
+                walkingDirection = 0f;
+            }
 
-        transform.Translate(walkAmount);
+            transform.Translate(walkAmount);
+        }
+        else
+        {
+            StartCoroutine(DoneLeft());
+        }
 
         //if (gameManager.level1)
         //{
@@ -76,6 +88,13 @@ public class Customer_2 : MonoBehaviour
         //}
     }
 
+    IEnumerator DoneLeft()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        leftArea.x = -5f * 0.5f * Time.deltaTime;
+        transform.Translate(leftArea);
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (gameManager.level1 || gameManager.level3)
@@ -85,7 +104,8 @@ public class Customer_2 : MonoBehaviour
                 shopMenu.moneyAmount += 22000;
                 audioCoin.Play();
 
-                Destroy(this.gameObject);
+                Destroy(this.gameObject, 2.5f);
+                isWalk = false;
 
                 custSpawn.custQty -= 1;
                 custSpawn.isSpawned = false;
@@ -93,6 +113,7 @@ public class Customer_2 : MonoBehaviour
                 gameManager.customerDone += 1;
                 gameManager.isButter = false;
                 gameManager.isKeju = false;
+                tyBanner.SetActive(true);
 
                 Destroy(collision.gameObject);
 
@@ -107,7 +128,8 @@ public class Customer_2 : MonoBehaviour
                 shopMenu.moneyAmount += 22000;
                 audioCoin.Play();
 
-                Destroy(this.gameObject);
+                Destroy(this.gameObject, 2.5f);
+                isWalk = false;
 
                 custSpawn.custQty -= 1;
                 custSpawn.isSpawned = false;
@@ -116,6 +138,7 @@ public class Customer_2 : MonoBehaviour
                 gameManager.isButter = false;
                 gameManager.isChoco = false;
                 gameManager.isKeju = false;
+                tyBanner.SetActive(true);
 
                 Destroy(collision.gameObject);
 
