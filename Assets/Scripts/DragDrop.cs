@@ -8,13 +8,20 @@ public class DragDrop : MonoBehaviour
 	private Vector3 offset; //selisih posisi obj dengan mouse
 	private float firstY; //pos vertikal awal, mengembalikan pos semula
 	private float firstX;
+	[SerializeField] private float defaultX;
+	[SerializeField] private float defaultY;
 
 	public SpriteRenderer spriteRenderer;
 	public Sprite[] spriteTB;
 
+	
+
     void Start()
     {
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+		defaultX = transform.position.x;
+		defaultY = transform.position.y;
     }
 
     //input touch 
@@ -45,7 +52,8 @@ public class DragDrop : MonoBehaviour
 
     public void ResetItem()
     {
-		transform.position = new Vector3(firstX, firstY, transform.position.z);
+		//transform.position = new Vector3(firstX, firstY, transform.position.z);
+		transform.position = new Vector3(defaultX, defaultY);
 		spriteRenderer.sprite = spriteTB[1];
 	}
 }

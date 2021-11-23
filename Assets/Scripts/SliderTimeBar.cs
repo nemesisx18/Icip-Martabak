@@ -7,6 +7,7 @@ public class SliderTimeBar : MonoBehaviour
     public Slider countdownBar;
 
     public float timer = 20;
+    public bool cantOrder;
 
     public CustSpawn custSpawn;
 
@@ -17,10 +18,11 @@ public class SliderTimeBar : MonoBehaviour
         custSpawn = _custSpawn;
     }
 
-    private void Start()
+    void Start()
     {
         //Set the max value to the refill time
         countdownBar.maxValue = timer;
+        cantOrder = false;
     }
 
     private void Update()
@@ -42,6 +44,7 @@ public class SliderTimeBar : MonoBehaviour
     public IEnumerator EndOrder()
     {
         LeftArea();
+        cantOrder = true;
 
         yield return new WaitForSeconds(1f);
         custSpawn.custQty -= 1;

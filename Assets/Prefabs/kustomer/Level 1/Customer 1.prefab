@@ -752,6 +752,7 @@ MonoBehaviour:
   custSpawn: {fileID: 0}
   shopMenu: {fileID: 0}
   gameManager: {fileID: 0}
+  timeBar: {fileID: 7443304529927741143}
   gameTimer: {fileID: 0}
   dishUI: {fileID: 7303201836358486720}
   tyBanner: {fileID: 1550169567567049505}
@@ -775,7 +776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownBar: {fileID: 4288217788716629304}
-  timer: 20
+  timer: 25
+  cantOrder: 0
   custSpawn: {fileID: 0}
 --- !u!95 &-2505689809529707214
 Animator:

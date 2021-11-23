@@ -9,7 +9,8 @@ public class CustSpawn : MonoBehaviour
 
     public int custQty;
 
-    public bool isSpawned = false;
+    public bool isSpawned;
+    public bool isSpawned2;
     public bool isFirst = true;
 
     public GameObject[] sliderInstance;
@@ -77,7 +78,7 @@ public class CustSpawn : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
 
-        if (custQty < 2 && custQty == 0 || isFirst == true)
+        if (custQty == 0 || isFirst == true)
         {
             if (elapsedTime > secondsBetweenSpawn)
             {
@@ -123,7 +124,7 @@ public class CustSpawn : MonoBehaviour
 
         custQty += 1;
 
-        isSpawned = true;
+        isSpawned2 = true;
         isFirst = false;
     }
 

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public Text moneyText;
     public GameObject winCanvas;
     public GameObject pauseUI;
+    public GameObject tutorCanvas;
     public AudioSource audioWin;
     public AudioClip clipWin;
 
@@ -19,13 +20,15 @@ public class GameManager : MonoBehaviour
     
     public bool isShopOpen = true;
     public bool pausedMenu = false;
+    public bool isFirstTime;
 
     [Header("Level info")]
     public bool level1;
     public bool level2;
     public bool level3;
-
     public bool isCooked;
+
+    public Text infoTxt;
 
     [Header("Mentega Item")]
     public int butterQty;
@@ -112,6 +115,12 @@ public class GameManager : MonoBehaviour
         prepCanvas.SetActive(true);
 
         isStart = true;
+
+        if(isFirstTime)
+        {
+            tutorCanvas.SetActive(true);
+            isFirstTime = false;
+        }
     }
 
     void Update()
@@ -119,6 +128,7 @@ public class GameManager : MonoBehaviour
         if (isStart == true)
         {
             moneyText.text = moneyAmount.ToString();
+            infoTxt.text = "Kustomer dilayani : " + customerDone.ToString();
 
             //List Item
             ItemMentega();
@@ -142,7 +152,6 @@ public class GameManager : MonoBehaviour
             if (customerDone == targetKustomer)
             {
                 winCanvas.SetActive(true);
-                Debug.Log("lol");
                 audioWin.PlayOneShot(clipWin);
                 Time.timeScale = 0;
                 isStart = false;
@@ -400,6 +409,12 @@ public class GameManager : MonoBehaviour
     public void ReturnMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1;
+    }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene("GameScene");
         Time.timeScale = 1;
     }
 

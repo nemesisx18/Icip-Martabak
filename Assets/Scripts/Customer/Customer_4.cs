@@ -7,6 +7,7 @@ public class Customer_4 : MonoBehaviour
     [SerializeField] private CustSpawn custSpawn;
     [SerializeField] private ShopMenu shopMenu;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private SliderTimeBar timeBar;
     public GameTimer gameTimer;
 
     public GameObject dishUI;
@@ -86,80 +87,87 @@ public class Customer_4 : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (gameManager.level1)
+        if (timeBar.cantOrder == false)
         {
-            if (collision.tag == "TB_Keju")
+            if (gameManager.level1)
             {
-                shopMenu.moneyAmount += 22000;
-                audioCoin.Play();
+                if (collision.tag == "TB_Keju")
+                {
+                    shopMenu.moneyAmount += 22000;
+                    audioCoin.Play();
 
-                Destroy(this.gameObject, 2.5f);
-                isWalk = false;
+                    Destroy(this.gameObject, 2.5f);
+                    isWalk = false;
 
-                custSpawn.custQty -= 1;
-                custSpawn.isSpawned = false;
+                    custSpawn.custQty -= 1;
+                    custSpawn.isSpawned = false;
 
-                gameManager.customerDone += 1;
-                gameManager.isButter = false;
-                gameManager.isKeju = false;
-                tyBanner.SetActive(true);
+                    gameManager.customerDone += 1;
+                    gameManager.isButter = false;
+                    gameManager.isKeju = false;
+                    tyBanner.SetActive(true);
 
-                Destroy(collision.gameObject);
+                    Destroy(collision.gameObject);
 
-                Debug.Log("ini rasa keju");
+                    Debug.Log("ini rasa keju");
+                }
+            }
+
+            if (gameManager.level2)
+            {
+                if (collision.tag == "TB_CokKej")
+                {
+                    shopMenu.moneyAmount += 22000;
+                    audioCoin.Play();
+
+                    Destroy(this.gameObject, 2.5f);
+                    isWalk = false;
+
+                    custSpawn.custQty -= 1;
+                    custSpawn.isSpawned = false;
+
+                    gameManager.customerDone += 1;
+                    gameManager.isButter = false;
+                    gameManager.isChoco = false;
+                    gameManager.isKeju = false;
+                    tyBanner.SetActive(true);
+
+                    Destroy(collision.gameObject);
+
+                    Debug.Log("ini rasa coklat keju");
+                }
+            }
+
+            if (gameManager.level3)
+            {
+                if (collision.tag == "TB_Spesial")
+                {
+                    shopMenu.moneyAmount += 27000;
+                    audioCoin.Play();
+
+                    Destroy(this.gameObject, 2.5f);
+                    isWalk = false;
+
+                    custSpawn.custQty -= 1;
+                    custSpawn.isSpawned2 = false;
+
+                    gameManager.customerDone += 1;
+                    gameManager.isButter = false;
+                    gameManager.isChaCha = false;
+                    gameManager.isMatcha = false;
+                    gameManager.isStrawberry = false;
+                    gameManager.isCorn = false;
+                    tyBanner.SetActive(true);
+
+                    Destroy(collision.gameObject);
+
+                    Debug.Log("ini rasa spesial");
+                }
             }
         }
-
-        if(gameManager.level2)
+        else
         {
-            if (collision.tag == "TB_CokKej")
-            {
-                shopMenu.moneyAmount += 22000;
-                audioCoin.Play();
-
-                Destroy(this.gameObject, 2.5f);
-                isWalk = false;
-
-                custSpawn.custQty -= 1;
-                custSpawn.isSpawned = false;
-
-                gameManager.customerDone += 1;
-                gameManager.isButter = false;
-                gameManager.isChoco = false;
-                gameManager.isKeju = false;
-                tyBanner.SetActive(true);
-
-                Destroy(collision.gameObject);
-
-                Debug.Log("ini rasa coklat keju");
-            }
-        }
-
-        if(gameManager.level3)
-        {
-            if(collision.tag == "TB_Spesial")
-            {
-                shopMenu.moneyAmount += 27000;
-                audioCoin.Play();
-
-                Destroy(this.gameObject, 2.5f);
-                isWalk = false;
-
-                custSpawn.custQty -= 1;
-                custSpawn.isSpawned = false;
-
-                gameManager.customerDone += 1;
-                gameManager.isButter = false;
-                gameManager.isChaCha = false;
-                gameManager.isMatcha = false;
-                gameManager.isStrawberry = false;
-                gameManager.isCorn = false;
-                tyBanner.SetActive(true);
-
-                Destroy(collision.gameObject);
-
-                Debug.Log("ini rasa spesial");
-            }
+            Debug.Log("kustomer sudah pergi");
         }
     }
 

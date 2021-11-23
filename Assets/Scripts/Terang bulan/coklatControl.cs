@@ -10,24 +10,31 @@ public class coklatControl : MonoBehaviour
 
     public GameManager gameManager;
 
-    public Rigidbody2D selectedObject;
+    private Rigidbody2D selectedObject;
+    public LayerMask layerMask;
     Vector3 offset;
     Vector3 mousePosition;
 
+    private float defaultX;
+    private float defaultY;
+
+    void Start()
+    {
+        defaultX = transform.position.x;
+        defaultY = transform.position.y;
+    }
+
     void Update()
     {
-        if (gameObject.activeInHierarchy)
-            Debug.Log("this" + gameObject.name + "active");
-        
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))
         {
-            Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
+            Collider2D targetObject = Physics2D.OverlapPoint(mousePosition, layerMask);
 
             if (targetObject)
             {
-                //selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
+                selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
                 offset = selectedObject.transform.position - mousePosition;
             }
         }
@@ -46,11 +53,12 @@ public class coklatControl : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Kemas")
+        if (collision.tag == "Kemas")
         {
             Instantiate(prefabCoklat, spawnTB.transform);
+
             gameManager.isButter = false;
             gameManager.isChoco = false;
             gameManager.isNut = false;
@@ -60,5 +68,10 @@ public class coklatControl : MonoBehaviour
             gameManager.isStrawberry = false;
             gameManager.isCorn = false;
         }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        transform.position = new Vector3(defaultX, defaultY);
     }
 }

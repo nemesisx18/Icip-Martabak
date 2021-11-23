@@ -108,7 +108,7 @@ public class SpawnAdonan : MonoBehaviour
                 Debug.Log("The object is keju");
             }
 
-            if(collision.tag == "ChaCha")
+            if (collision.tag == "ChaCha")
             {
                 gameManager.chaChaQty -= 1;
                 gameManager.isChaCha = true;
