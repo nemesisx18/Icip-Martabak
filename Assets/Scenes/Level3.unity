@@ -550,9 +550,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1180086665}
-        m_TargetAssemblyTypeName: GameTimer, Assembly-CSharp
-        m_MethodName: RetryGame
+      - m_Target: {fileID: 1180086667}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Level3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

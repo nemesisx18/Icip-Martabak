@@ -9,17 +9,17 @@ C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker1
 -projectPath
 E:/Project/coba/Icip-Martabak
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker1.log
 -srvPort
-54228
+56652
 Successfully changed project path to: E:/Project/coba/Icip-Martabak
 E:/Project/coba/Icip-Martabak
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 100.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 551.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -36,38 +36,38 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001514 seconds.
+Registered in 0.003083 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 129.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 106.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.830 seconds
+- Completed reload, in  6.135 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003844 seconds.
+Registered in 0.128797 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 169.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.681 seconds
+- Completed reload, in  2.754 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 4.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3265 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.7 MB.
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3706.
-Total: 6.591100 ms (FindLiveObjects: 0.665600 ms CreateObjectMapping: 0.445300 ms MarkObjects: 5.372100 ms  DeleteObjects: 0.105300 ms)
+Total: 7.571900 ms (FindLiveObjects: 0.517600 ms CreateObjectMapping: 1.211500 ms MarkObjects: 5.713100 ms  DeleteObjects: 0.127400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -81,9 +81,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d81c150509b488e66109c1e633a45e4') in 0.034241 seconds 
-  Import took 0.093614 seconds .
+  path: Assets/Scripts/GameTimer.cs
+  artifactKey: Guid(a7f2c1c23ec003944a27749c0d8c933b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameTimer.cs using Guid(a7f2c1c23ec003944a27749c0d8c933b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b68c351144f5f0102ac7f736b4f7d7') in 0.101251 seconds 
+  Import took 0.213857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.470066 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(670599e7cf7bc8843be99bf375002aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(670599e7cf7bc8843be99bf375002aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf2bf72905bd52012571189d4ecb428') in 0.050211 seconds 
+  Import took 0.110811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.636666 seconds.
+  path: Assets/Scenes/Level3.unity
+  artifactKey: Guid(366041d55341f2a458b63ad109f37cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level3.unity using Guid(366041d55341f2a458b63ad109f37cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13df1974fad6bd8dd25fad274b4cc7e5') in 0.033082 seconds 
+  Import took 0.116556 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

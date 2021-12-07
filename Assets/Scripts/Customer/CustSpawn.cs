@@ -41,9 +41,6 @@ public class CustSpawn : MonoBehaviour
         customerInstance_3 = customerObject_3;
         customerInstance_4 = customerObject_4;
 
-        //CustomerController cc = customerInstance[customerInstance.Length].GetComponent<CustomerController>();
-        //cc.SetupCustomer(GetComponent<CustSpawn>());
-
         //customer 1
         Customer_1 cs1 = customerInstance.GetComponent<Customer_1>();
         cs1.Setup1(GetComponent<CustSpawn>());

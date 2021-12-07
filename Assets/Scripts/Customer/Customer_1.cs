@@ -76,20 +76,6 @@ public class Customer_1 : MonoBehaviour
         {
             StartCoroutine(DoneLeft());
         }
-
-        //if(gameManager.level1)
-        //{
-        //    PesananChoco();
-        //}
-
-        //if(gameManager.level2)
-        //{
-        //    PesananCokKac();
-        //}
-        //if(gameManager.level3)
-        //{
-        //    //isi pesanan
-        //}
     }
 
     IEnumerator DoneLeft()
